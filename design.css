@@ -1,0 +1,140 @@
+
+  * {
+    box-sizing: border-box;
+    margin: 0; /*Removes default margins */
+    padding: 0; /*Removes default padding */
+  }
+
+  /*style for the page */
+  body {
+    font-family: Tahoma;
+    display: flex; /*Using Flexbox for layout */
+    flex-wrap: wrap;
+  }
+
+    /*style for the header */
+
+  header {
+    width: 100%;
+    background-color: #121111;
+    padding: 30px;
+    font-family: Tahoma;
+    text-align: center;
+    font-size: clamp(20px,4vw,35px);
+    color: rgb(21, 229, 135);
+  }
+
+    /*style for the footer */
+
+
+  footer {
+    width: 100%;
+    background-color: #121111;
+    padding: 30px;
+    font-family: Tahoma;
+    text-align: center;
+    font-size: clamp(20px,4vw,10px);
+    color: rgb(21, 229, 135);
+  }
+
+      
+
+  .menu {  /*style for the menu */
+    width: 20%;
+    text-align: center;
+  }
+
+
+  .menu a {  /*style for each link in the menu */
+    background-color: #121111;
+    padding: 8px;
+    font-family: Tahoma;
+    margin-top: 7px;
+    text-align: center;
+    font-size: clamp(20px,4vw,10px);
+    display: block;
+    width: 100%;
+    color: rgb(21, 229, 135);
+  }
+
+  .wrapper { /*Main Content styling */
+    
+    padding: 10px;
+    flex: 1;
+  }
+  .img-info { /*Image information styling */
+    width: 100%;
+  }
+
+  /*Formatting properties for subheading like space and responsive font */
+  .img-info h2 {  
+    padding: 20px; 
+    font-family: 'Lucida Sans Unicode';
+    font-size: clamp(24px,4vw,  35px);   /*Responsive font: font changes as browser page changes size */
+  }
+
+  /*Formatting properties for subheading like space and responsive font */
+  .img-info p {
+    padding: 20px;
+    font-family: 'Lucida Sans Unicode';
+    font-size: 16px;
+  }
+
+ 
+  img-stretch {
+    max-height: 50vh; /*Limits height to 50% of the viewport height*/
+    overflow: hidden; /*Prevents image overflowing container */
+  }
+
+
+   /*Fomatting Image */
+  .img-stretch img {
+    width:100%;  
+    
+  }
+
+  
+ /*Change styles when screen size is less than 649px */
+  @media only screen and (min-width: 649px)
+  {
+    
+
+      .menu, .wrapper {
+        width: 100%;
+      }
+
+      .img-stretch img {
+        width:100%;
+      }
+
+    }
+
+    /*Change styles when screen size is less than 1024px */
+  @media only screen and (min-width: 1024px)
+  {
+      header {
+          
+          font-size: 35px; /*Adjusts font size for large screen size */
+      }
+
+      .img-info h2 {
+          font-size: 35px;
+          
+        }
+
+      .img-info p {
+          font-size: 16px;
+          
+        }
+
+        
+  }
+ 
+
+  
+
+
+ 
+
+  
+

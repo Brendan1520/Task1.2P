@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Concepts</title>
+</head>
+<body>
+    <script>
+        let rwp = "Responsive World";
+
+        console.log("Original String", rwp);
+
+        console.log("Length of the string:", rwp.  length); /* Shows the length of a string*/
+
+        console.log("Uppercase: ", rwp.toUpperCase()); /* converts string to have uppercase letters.*/
+
+        console.log("Replacing world with web", rwp.replace("world", "web"));/* Replace a value with another value */
+
+        console.log("Substring from 0-5: ", rwp.
+        substring(0,5)); /* Shows a restricted amount of charachters from varaible based on two*/
+
+        console.log("Index of Responsive: ", rwp.indexOf("Responsive")) /* Shows the number of */
+
+      
+
+
+        let num = 111.234;
+        console.log("\nOriginal Number: ", num); /* COnverts the number to its string representation.*/
+
+        console.log("Rounded: ", (num.toString()));
+        /* Converts the number to its string representation.*/
+        
+        console.log("Number with 2 decimals:", num.toFixed(2));
+        /* Represents the number using fixed-point notaton, with one argument defining the number of decimals*/
+
+
+        console.log("Number in exponential notation:", num.toExponential(2));
+        /*Represents the number in exponential with the argument that says the number of decimals .*/
+
+
+        console.log("Number with 4 significant figures: ", num.toPrecision(4)); /* Formats the number to a particular length.*/
+
+
+        console.log("Value of the number: ", num.valueOf());/* Shows the value of the specific object.*/
+
+
+
+        let date = new Date();
+
+        console.log("Current Date :", date); /* Shows the date*/
+
+
+        console.log("Year:", date.getFullYear());
+        /* Shows the full year*/
+
+
+        console.log("Month :", date.getMonth());
+        /* Shows the month (1-11)*/
+
+
+        console.log("Date of the Month :", date.getDate()); /* shows the days of the month (1-31).*/
+
+
+        console.log("Current Date :", date.getHours()); /* Shows the hour in a day (0-23)*/
+
+
+        console.log("Current Date :", date.getMinutes()); /* Shows the minitues in an hour*/
+
+
+        function greet(name)
+        {
+        return "Responsive Web, " + name;
+
+        }
+
+        console.log("/nFunction greet:", greet("App"));
+
+       /*Function expression with let*/
+        let Stretch = function(nametwo) {
+            return "Web App Presented, by" + nametwo + "!!";
+
+        }
+
+        console.log("Output final: ", Stretch("Brendan"));
+
+
+
+    </script>
+</body>
+</html>
